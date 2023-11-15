@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    height: 100vh;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    font-family: 'Kumbh Sans';
+}
+.faq{
+    margin-top: 148px;
+    margin-left: 24px;
+    margin-right: 24px;
+    min-width: 327px;
+    padding-bottom: 48px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 23px;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.50);
+}
+.imgdivs{
+    display: grid;
+    position: relative;
+}
+.woman {
+    width: 237px;
+    margin-top: -108px;
+    justify-self: center;
+}
+.under{
+    top: 0px;
+    position: absolute;
+    justify-self: center;
+}
+h1{
+    text-transform: uppercase;
+    justify-self: center;
+    margin-top: 60px;
+    color: #1E1F36;
+    font-size: 32px;
+    font-weight: 700;
+    height: fit-content;
+    text-align: center;
+}
+.questiondiv{
+    margin: 19px 24px 0px 24px;
+}
+.questiondiv p {
+    color: #4B4C5F;
+    font-family: Kumbh Sans;
+    font-size: 13px;
+    font-weight: 400;
+}
+.flexdiv{
+    display: flex;
+}
+.arrow{
+    margin-left: auto;
+    height: fit-content;
+    margin-top: 2.2px;
+}
+.underline{
+    margin-top: 19px;
+    height: 1px;
+    width: 100%;
+    background-color: #E8E8EA;
+}
+
+.answer{
+    display: none;
+    margin-top: 13px;
+}
+.one{
+    margin:48px 24px 0px 24px;
+}
+
+.question:hover{
+    color: #F47B56;
+    cursor: pointer;
+}
+.underdesktop,.womandesktop,#box{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media(min-width: 1440px){
+.woman,.under{
+    display: none;
+}
+
+.underdesktop,.womandesktop,#box{
+    display: block;
+}
+.faq{
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-column-gap: 88px;
+    margin-top: 129px;
+    margin-left: 281px;
+    margin-right: 239px;
+    overflow: hidden;
+    padding-bottom: 83px;
+
+}
+h1{
+    text-align: start;
+}
+
+.questiondiv{
+    margin: 18px 95px 0px 0px;
+}
+.one{
+    margin: 45px 95px 0px 0px;
+}
+.underdesktop{
+    position: absolute;
+    left: -550px;
+    top: -300px;
+    z-index: 0;
+}
+.womandesktop{
+    margin-left: -70px;
+    margin-top: 80px;
+    position: relative;
+
+}
+#box{
+    top: 347px;
+    position: absolute;
+    left: 185px;
+    z-index: 2;
+    animation: moveup 1.5s linear infinite alternate;
+}
+
+
+@keyframes moveup {
+    100%{
+        transform: translateY(-7px);
+    }
+}
+}
